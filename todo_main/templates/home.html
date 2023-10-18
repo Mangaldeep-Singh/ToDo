@@ -45,8 +45,7 @@
                     <div class="card-body">
                         {{ctask}} marked as completed on {{ctask.modified_at}}
                         <span style="position: relative; float: right;">
-                            <a href="{% url 'mark_as_undone' ctask.pk %}" class="btn btn-success"><i class="fa fa-check"></i> Mark as Not Done</a>
-                            <a class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                            <a href="{% url 'mark_as_undone' ctask.pk %}" class="btn btn-danger"><i class="fa fa-times"></i> Mark as Not Done</a>
                         </span>
                     </div>
                 </div>
